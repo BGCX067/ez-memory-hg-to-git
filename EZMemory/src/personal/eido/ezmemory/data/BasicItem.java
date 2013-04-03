@@ -1,9 +1,10 @@
 package personal.eido.ezmemory.data;
 
 public class BasicItem {
-	private final int RANK_MAX = 10;
-	private final int RANK_MIN = 0;
-	private final int RANK_DEFAULT = 5;
+	static public final int RANK_LENGTH = 11;
+	static public final int RANK_MAX = 10;
+	static public final int RANK_MIN = 0;
+	static public final int RANK_DEFAULT = 5;
 	
 	private String keyWord;
 	private String shortDescription;
@@ -11,11 +12,11 @@ public class BasicItem {
 	private int rank;
 	
 	public BasicItem(String keyWord, String shortDesc){
-		new BasicItem(keyWord, shortDesc, this.RANK_DEFAULT);
+		this(keyWord, shortDesc, BasicItem.RANK_DEFAULT);
 	}
 	
 	public BasicItem(String keyWord, String shortDesc, int rank){
-		new BasicItem(keyWord, shortDesc, "", rank);
+		this(keyWord, shortDesc, "", rank);
 	}
 	
 	public BasicItem(String keyWord, String shortDesc, String longDesc, int rank){
@@ -41,14 +42,14 @@ public class BasicItem {
 	/**
 	 * @return the shortDescription
 	 */
-	public String getMeaning() {
+	public String getshortDescription() {
 		return shortDescription;
 	}
 	/**
 	 * @param shortDescription the shortDescription to set
 	 */
-	public void setMeaning(String meaning) {
-		this.shortDescription = meaning;
+	public void setshortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
 	}
 	/**
 	 * @return the longDescription
@@ -72,10 +73,10 @@ public class BasicItem {
 	 * @param rank the rank to set
 	 */
 	public void setRank(int rank) {
-		if(rank > this.RANK_MAX)
-			this.rank = this.RANK_MAX;
-		else if (rank < this.RANK_MIN)
-			this.rank = this.RANK_MIN;
+		if(rank > BasicItem.RANK_MAX)
+			this.rank = BasicItem.RANK_MAX;
+		else if (rank < BasicItem.RANK_MIN)
+			this.rank = BasicItem.RANK_MIN;
 		else
 			this.rank = rank;
 	}

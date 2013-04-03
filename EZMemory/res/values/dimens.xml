@@ -4,5 +4,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="word_font_size">32px</dimen>
+    <dimen name="secondary_font_size">22px</dimen>
+    <dimen name="button_width">300dp</dimen>
 
 </resources>

@@ -5,5 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="display_text">display_text</string>
+    <string name="textview">TextView</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="buttonOnClick">button_onClick</string>
 
 </resources>

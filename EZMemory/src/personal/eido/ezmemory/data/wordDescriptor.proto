@@ -1,0 +1,16 @@
+package data;
+
+option java_package = "personal.eido.ezmemory.data";
+option java_outer_classname = "WordProtos";
+option optimize_for = LITE_RUNTIME;
+
+message Word{
+	optional string keyWord = 1;
+	optional string shortDescription = 2;
+	optional string longDescription = 3;
+	optional int32 rank = 4 [default = 5];
+}
+
+message WordList {
+	repeated Word word = 1;
+}

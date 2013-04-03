@@ -12,7 +12,46 @@
         android:id="@+id/display_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:maxLines="@integer/KeyWord_MaxLines"
         android:text="@string/hello_world"
         android:textSize="@dimen/word_font_size" />
+
+    <TextView
+        android:id="@+id/textView_shortDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/display_text"
+        android:layout_below="@+id/display_text"
+        android:layout_marginTop="18dp"
+        android:gravity="top|left"
+        android:text="@string/textview"
+        android:textSize="@dimen/secondary_font_size"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_shortDesc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="154dp"
+        android:onClick="@string/buttonOnClick"
+        android:text="@string/yes"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:width="@dimen/button_width" />
+
+    <Button
+        android:id="@+id/button_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_yes"
+        android:layout_alignTop="@+id/button_yes"
+        android:layout_marginTop="59dp"
+        android:onClick="@string/buttonOnClick"
+        android:text="@string/no"
+        android:visibility="gone"
+        android:width="@dimen/button_width" />
 
 </RelativeLayout>
